@@ -8,7 +8,7 @@ const useLogin = () => {
   const { dispatch } = useAuthContext();
 
   const login = async (email, password) => {
-    const data = await fetch("http://localhost:4001/api/user/login", {
+    const data = await fetch("https://elite-fitness-gym.onrender.com/api/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

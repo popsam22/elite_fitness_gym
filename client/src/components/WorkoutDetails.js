@@ -16,7 +16,7 @@ const WorkoutDetails = ({ workout }) => {
     }
 
     const data = await fetch(
-      `http://localhost:4001/api/workouts/${workout._id}`,
+      `https://elite-fitness-gym.onrender.com/api/workouts/${workout._id}`,
       {
         method: "DELETE",
         headers: {

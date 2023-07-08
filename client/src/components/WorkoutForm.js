@@ -35,7 +35,7 @@ const WorkoutForm = () => {
     const workout = { title, load, repititions };
 
     //fetch request to post new workout
-    const data = await fetch("http://localhost:4001/api/workouts", {
+    const data = await fetch("https://elite-fitness-gym.onrender.com/api/workouts", {
       method: "POST",
       body: JSON.stringify(workout),
       headers: {

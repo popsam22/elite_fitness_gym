@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     const workoutsData = async () => {
-      const data = await fetch("http://localhost:4001/api/workouts", {
+      const data = await fetch("https://elite-fitness-gym.onrender.com/api/workouts", {
         headers: {
           "Authorization": `Bearer ${user.token}`
         }

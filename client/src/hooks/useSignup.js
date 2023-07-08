@@ -11,7 +11,7 @@ const useSignup = () => {
     setError(null); //incase we make a bad request, this resets the error to its original state
 
     //function to send request to backend to sign users up
-    const data = await fetch("http://localhost:4001/api/user/signup", {
+    const data = await fetch("https://elite-fitness-gym.onrender.com/api/user/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
