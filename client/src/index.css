@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Layout */
+:root{
+    --primary: #1aac83;
+    --error: #e7195a;
+}
+
+body{
+    margin: 0;
+    background: #f1f1f1;
+    font-family: "Poppins";
+}
+
+header{
+    background: #fff;
+}
+
+header .root__layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    max-width: 1400px;
+}
+
+header a{
+    color: #333;
+    text-decoration: none;
+}
+
+.root__layout-main{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Home  */
+.home{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 100px;
+}
+
+/* Workout Details */
+.workout__details{
+    background: #fff;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.workout__details h2{
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+    color: var(--primary);
+}
+
+.workout__details p{
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+}
+
+.workout__details span{
+    padding: 6px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Workout Form */
+label, input{
+    display: block;
+}
+
+input{
+    width: 80%;
+    box-sizing: border-box;
+    margin: 10px 0 15px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form button {
+    background: var(--primary);
+    font-family: "Poppins";
+    color: #fff;
+    border: 0;
+    padding: 6px;
+    cursor: pointer;
+}
+
+div .workout__form-error{
+    background: #ffefef;
+    color: var(--error);
+    border: 1px solid var(--error);
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+/* input.error{
+    border: 2px solid var(--error);
+} */
+
+/* Navbar Links */
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    margin-left: 10px;
+}
+
+nav button{
+    background: #fff;
+    margin-left: 10px;
+    color: var(--primary);
+    border: 2px solid var(--primary) ;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-family: "Poppins";
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Login and Signup Forms */
+form.signup, form.login{
+    max-width: 440px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+form button{
+    background: var(--error);
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
