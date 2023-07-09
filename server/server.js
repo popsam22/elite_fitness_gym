@@ -21,8 +21,9 @@ app.use((req, res, next) => {
   next();
 });
 
+const indexPath = path.join(__dirname, 'client', 'build', 'index.html');
 app.get('*', (req, res) => {
-  res.sendFile(path.join(buildPath, 'index.html'));
+  res.sendFile(indexPath);
 });
 
 
