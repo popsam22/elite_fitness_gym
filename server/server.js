@@ -10,7 +10,8 @@ const userRoutes = require('./routes/user')
 const app = express();
 
 //middlewares
-const buildPath = path.join(__dirname, '..', 'client', 'build');
+const buildPath = path.join('client', 'build');
+console.log(buildPath)
 app.use(express.static(buildPath));
 
 app.use(cors())
