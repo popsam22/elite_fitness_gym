@@ -3,16 +3,16 @@ require("dotenv").config();
 const express = require("express");
 const cors = require('cors')
 const mongoose = require('mongoose')
-const path = require('path');
+// const path = require('path');
 const workoutRoutes = require('./routes/workouts')
 const userRoutes = require('./routes/user')
 
 const app = express();
 
 //middlewares
-const buildPath = path.join('client', 'build');
-console.log(buildPath)
-app.use(express.static(buildPath));
+// const buildPath = path.join('client', 'build');
+// console.log(buildPath)
+// app.use(express.static(buildPath));
 
 app.use(cors())
 app.use(express.json())
@@ -21,10 +21,10 @@ app.use((req, res, next) => {
   next();
 });
 
-const indexPath = path.join(__dirname, '..', 'client', 'build', 'index.html');
-app.get('*', (req, res) => {
-  res.sendFile(indexPath);
-});
+// const indexPath = path.join(__dirname, '..', 'client', 'build', 'index.html');
+// app.get('*', (req, res) => {
+//   res.sendFile(indexPath);
+// });
 
 
 //connection to database
